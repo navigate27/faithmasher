@@ -1,0 +1,58 @@
+.thumbnail {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+}
+.thumbnail img {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.loading{
+	position: absolute; 
+	z-index:999; 
+	left: 0px; 
+	top: 0px;
+	right: 0px;
+}
+
+/*super style*/
+.nav-mash{
+  background-color: #00c4a7;
+}
+
+.nav-mash a{
+  color: #fff;
+}
+
+.nav-mash a:hover{
+  color: #fff;
+  background-color: #00A88F;
+  -webkit-transition: background-color ease-out 0.5s;
+  -moz-transition: background-color  ease-out 0.5s;
+  -o-transition: background-color ease-out 0.5s;
+  transition: background-color ease-out 0.5s;
+}
+
+.nav-toggle:hover{
+  background-color: #00A88F;
+}
+
+@media screen and (max-width: 768px){
+  .nav-mash .nav-item{
+    background-color: #00c4a7;
+  }
+}
